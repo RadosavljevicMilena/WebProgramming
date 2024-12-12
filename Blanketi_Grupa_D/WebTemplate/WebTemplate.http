@@ -1,0 +1,56 @@
+@WebTemplate_HostAddress = http://localhost:5215
+
+GET {{WebTemplate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajBanku
+Accept: application/json
+Content-Type: application/json
+
+{
+  "naziv": "Intesa",
+  "lokacija": "Nis",
+  "brojTelefona": "+381185556667",
+  "brojZaposlenih": 45
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajKlijenta/Marko/Markovic/1995-12-09T15:46:27.807Z/062841685
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajKlijenta/Mirka/Antic/1992-12-09T15:46:27.807Z/0635628456
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRacun/1702578493589/2024-12-09T15:46:27.807Z/1000/10000/1/1
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRacun/1702578493589/2024-12-09T15:46:27.807Z/1000/10000/1/1
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRacun/1701122558889/2024-11-09T15:46:27.807Z/5000/80000/2/1
+Accept: application/json
+Content-Type: application/json
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/IzmeniStanjeRacuna/1702578493589/500
+Accept: application/json
+Content-Type: application/json
+
+###
+GET  {{WebTemplate_HostAddress}}/Ispit/IzmeniStanjeRacuna/1702578493589/1000
+Accept: application/json
+Content-Type: application/json
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/SumaSvihSredstavaBanke/1
+Accept: application/json
+Content-Type: application/json
