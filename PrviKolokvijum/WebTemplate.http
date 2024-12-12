@@ -1,0 +1,101 @@
+@WebTemplate_HostAddress = http://localhost:5215
+
+GET {{WebTemplate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajAkvarijum
+Accept: application/json
+Content-Type: application/json
+
+{
+  "sifra": "LsM321",
+  "zapremina": 2000,
+  "temperatura": 38.6,
+  "datumPoslednjegCiscenja": "2024-12-08T13:44:01.238Z",
+  "frekvencijaCiscenja": 3,
+  "kapacitet": 5
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajAkvarijum
+Accept: application/json
+Content-Type: application/json
+
+{
+  "sifra": "JsM123",
+  "zapremina": 4000,
+  "temperatura": 38.4,
+  "datumPoslednjegCiscenja": "2024-12-05T13:44:01.238Z",
+  "frekvencijaCiscenja": 5,
+  "kapacitet": 4
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajAkvarijum
+Accept: application/json
+Content-Type: application/json
+
+{
+  "sifra": "Ksd233",
+  "zapremina": 5400,
+  "temperatura": 39,
+  "datumPoslednjegCiscenja": "2024-12-05T13:44:01.238Z",
+  "frekvencijaCiscenja": 6,
+  "kapacitet": 4
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRibu/Riba1/20/1
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRibu/Riba3/30/1
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRibu/Riba4/10/1
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRibu/Riba5/50/1
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRibuUAkvarijum/2024-12-06T13:44:01.238Z/3/1/2
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRibuUAkvarijum/2024-12-08T13:44:01.238Z/1/1/3
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRibuUAkvarijum/2024-12-09T13:44:01.238Z/1/1/4
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRibuUAkvarijum/2024-12-09T13:44:01.238Z/1/1/5
+Accept: application/json
+Content-Type: application/json
+
+###
+PUT {{WebTemplate_HostAddress}}/Ispit/AzurirajRibe/1/5/2024-12-08T13:44:01.238Z
+Accept: application/json
+Content-Type: application/json
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/UkupnaMasaRiba/1
+Accept: application/json
+Content-Type: application/json
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/PronadjiAkvarijumeZaCiscenje
+Accept: application/json
+Content-Type: application/json
