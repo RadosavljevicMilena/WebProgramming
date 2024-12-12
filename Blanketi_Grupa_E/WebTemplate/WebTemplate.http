@@ -1,0 +1,62 @@
+@WebTemplate_HostAddress = http://localhost:5215
+
+GET {{WebTemplate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajGrad
+Accept: application/json
+Content-Type: application/json
+
+{
+  "naziv": "Nis",
+  "brojStankovnika": 200000,
+  "brojKoloseka": 10,
+  "longitude": 152,
+  "latitude": 54
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajGrad
+Accept: application/json
+Content-Type: application/json
+
+{
+  "naziv": "Beograd",
+  "brojStankovnika": 2000000,
+  "brojKoloseka": 20,
+  "longitude": 142,
+  "latitude": 50
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajVoz
+Accept: application/json
+Content-Type: application/json
+
+{
+  "datumProizvodnje": "1995-12-10T09:31:00.723Z",
+  "maxKapacitetPutnika": 100,
+  "maxTezina": 25,
+  "maxBrzina": 80
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRelaciju/110/120/2024-12-09T09:31:00.723Z/1/2/1
+Accept: application/json
+Content-Type: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRelaciju/80/120/2024-12-09T09:31:00.723Z/2/1/2
+Accept: application/json
+Content-Type: application/json
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/PretraziVozove/1
+Accept: application/json
+Content-Type: application/json
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/UkupnaZaradaVozaNaRelaciji/2
+Accept: application/json
+Content-Type: application/json

@@ -1,0 +1,72 @@
+@WebTemplate_HostAddress = http://localhost:5215
+
+GET {{WebTemplate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajKuvara
+Content-Type: application/json
+Accept: application/json
+
+{
+  "ime": "Marko",
+  "prezime": "Markovic",
+  "datumRodjenja": "1995-12-10T10:43:24.779Z",
+  "strucnaSprema": "Kuvarski tehnicar"
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajKuvara
+Content-Type: application/json
+Accept: application/json
+
+{
+  "ime": "Petar",
+  "prezime": "Petrovic",
+  "datumRodjenja": "1998-12-10T10:43:24.779Z",
+  "strucnaSprema": "Kuvar specijalista"
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRestoran
+Content-Type: application/json
+Accept: application/json
+
+{
+  "naziv": "Princ",
+  "maxBrojGostiju": 300,
+  "maxBrojKuvara": 10,
+  "brojTelefona": "018252252"
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajRestoran
+Content-Type: application/json
+Accept: application/json
+
+{
+  "naziv": "Musmula",
+  "maxBrojGostiju": 200,
+  "maxBrojKuvara": 8,
+  "brojTelefona": "011698352"
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/ZaposliKuvara/2024-12-10T10:43:24.779Z/1000/Sef kuhinje/1/1
+Content-Type: application/json
+Accept: */*
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/ZaposliKuvara/2024-05-10T10:43:24.779Z/750/Kuvar/2/1
+Content-Type: application/json
+Accept: */*
+
+###
+GET  {{WebTemplate_HostAddress}}/Ispit/PlataKuvara/1
+Content-Type: application/json
+Accept: */*
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/RadiUNajviseRestorana
+Accept: application/json
+Content-Type: application/json
