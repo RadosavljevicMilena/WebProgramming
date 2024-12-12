@@ -1,0 +1,38 @@
+@WebTemplate_HostAddress = http://localhost:5215
+
+GET {{WebTemplate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodavanjeAerodroma
+Content-Type: application/json
+Accept: application/json
+
+{
+    "naziv": "Neki Aerodrom",
+    "kod": "NAI",
+    "koordX": 44,
+    "koordY": 23,
+    "kapacitetLetelica": 10,
+    "kapacitetPutnika": 150
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodavanjeLetelice/Boing747/100/10/ms234
+Content-Type: application/json
+Accept: */*
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodavanjeLeta/2020-05-16T05:50:06/2020-05-16T07:00:06/1/2/1
+Content-Type: application/json
+Accept: */*
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/PronadjiLet/1
+Content-Type: application/json
+Accept: */*
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/ProsecnaDuzinaLeta/1/2
+Content-Type: application/json
+Accept: */*

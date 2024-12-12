@@ -1,0 +1,67 @@
+@WebTemplate_HostAddress = http://localhost:5215
+
+GET {{WebTemplate_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajElektrodistribuciju
+Accept: application/json
+Content-Type: application/json
+
+{
+  "naziv": "Elektrodistribucija1",
+  "grad": "Beograd",
+  "emailAdresa": "beograd@elektrodistribucija.com",
+  "brojRadnika": 200
+}
+
+###
+Post {{WebTemplate_HostAddress}}/Ispit/DodajPotrosaca
+Content-Type: application/json
+Accept: application/json
+
+{
+  "ime": "Petar",
+  "prezime": "Petrovic",
+  "godinaRodjenja": "1995-01-12T11:44:25.159Z",
+  "mestoRodjenja": "Nis"
+}
+
+###
+POST {{WebTemplate_HostAddress}}/Ispit/DodajElektrodistribuciju
+Accept: application/json
+Content-Type: application/json
+
+{
+  "naziv": "Elektrodistribucija2",
+  "grad": "Nis",
+  "emailAdresa": "nis@elektrodistribucija.com",
+  "brojRadnika": 150
+}
+
+###
+Post {{WebTemplate_HostAddress}}/Ispit/DodajPotrosaca
+Content-Type: application/json
+Accept: application/json
+
+{
+  "ime": "Marko",
+  "prezime": "Markovic",
+  "godinaRodjenja": "1975-11-12T11:44:25.159Z",
+  "mestoRodjenja": "Beograd"
+}
+
+###
+Post {{WebTemplate_HostAddress}}/Ispit/DodavanjePotrosacaDistribuciji/321654/BWS-444/2024-02-12T11:44:25.159Z/1/1
+Content-Type: application/json
+Accept: */*
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/PronadjiPotrosaca/BWS-457
+Content-Type: application/json
+Accept: application/json
+
+###
+GET {{WebTemplate_HostAddress}}/Ispit/PronadjiSvePotrosace/2024-01-01T00:00:00.159Z/2024-12-12T11:44:25.159Z
+Content-Type: application/json
+Accept: */*
